@@ -19,7 +19,7 @@ resource "google_compute_instance" "default" {
   #   }
 
   network_interface {
-    network    = var.network_name
+    network    = var.network
     subnetwork = var.subnetwork
     access_config {
       // Ephemeral public IP

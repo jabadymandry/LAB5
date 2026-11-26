@@ -12,7 +12,7 @@ variable "boot_disk" {
   default = "debian-cloud/debian-12"
 }
 
-variable "network_name" {
+variable "network" {
   type    = string
   default = "default"
 }
