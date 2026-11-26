@@ -20,16 +20,6 @@ provider "google" {
   
 }
 
-module "tf-instance-096923" {
-  source = "./modules/instances"
-  machine_type = "e2-standard-2"
-  instance_name = "tf-instance-096923"
-  # Task 6. Use a module from the Registry
-  #network_name = module.network.network_name
-  #subnetwork = module.network.subnets["${var.region}/subnet-01"].name
-
-}
-
 module "tf-instance-1" {
   source = "./modules/instances"
   machine_type = "e2-micro"
