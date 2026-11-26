@@ -8,7 +8,7 @@ terraform {
 
   # Task 3. Configure a remote backend
   backend "gcs" {
-    bucket = "tf-bucket-841837"
+    bucket = "tf-instance-813334"
     prefix = "terraform/state"
   }
 }
@@ -36,3 +36,8 @@ module "tf-instance-2" {
   subnetwork    = "default"
 }
 
+module "name" {
+  source = "./modules/storage"
+  bucket_name = var.bucket_name
+  location = "US"
+}
