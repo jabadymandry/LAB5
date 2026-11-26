@@ -64,17 +64,3 @@ module "network" {
     }
   ]
 }
-
-# Task 7. Configure a firewall
-resource "google_compute_firewall" "default" {
-  name    = "tf-firewall"
-  network = module.network.network_name
-
-  allow {
-    protocol = "tcp"
-    ports    = ["80"]
-  }
-
-  direction = "INGRESS"
-  source_ranges = ["0.0.0.0/0"]
-}
