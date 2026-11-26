@@ -1,4 +1,4 @@
-variable "bucket_name" {
+/*variable "bucket_name" {
   type    = string
   default = "my-bucket"
 }
@@ -16,4 +16,4 @@ variable "force_destroy" {
 variable "uniform_bucket_level_access" {
   type    = bool
   default = true
-}
+}*/

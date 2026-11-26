@@ -48,8 +48,3 @@ module "tf-instance-2" {
   network_name = module.network.network_name
   subnetwork = module.network.subnets["${var.region}/subnet-02"].name
 }
-
-module "storage" {
-  source = "./modules/storage"
-  bucket_name = var.bucket_name
-}
