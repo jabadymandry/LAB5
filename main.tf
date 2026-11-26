@@ -18,10 +18,14 @@ module "tf-instance-1" {
   source        = "./modules/instances"
   machine_type  = "e2-micro"
   instance_name = "tf-instance-1"
+  network       = "default"
+  subnetwork    = "default"
 }
 
 module "tf-instance-2" {
   source        = "./modules/instances"
   machine_type  = "e2-micro"
   instance_name = "tf-instance-2"
+  network       = "default"
+  subnetwork    = "default"
 }
