@@ -35,14 +35,6 @@ module "tf-instance-2" {
   subnetwork    = "default"
 }
 
-module "tf-instance-813334" {
-  source        = "./modules/instances"
-  machine_type  = "e2-standard-2"
-  instance_name = "tf-instance-813334"
-  network       = "default"
-  subnetwork    = "default"
-}
-
 module "name" {
   source = "./modules/storage"
   bucket_name = var.bucket_name
