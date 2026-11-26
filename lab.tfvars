@@ -1,0 +1,5 @@
+region      = ""
+vpc_name    = ""
+zone        = ""
+project_id  = ""
+bucket_name = ""
