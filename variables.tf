@@ -1,24 +1,19 @@
 variable "region" {
-  type        = string
-  default     = "us-east1"
+  type    = string
 }
 
 variable "zone" {
-  type        = string
-  default     = "us-east1-c"
+  type    = string
 }
 
 variable "project_id" {
-  type        = string
-  default     = "qwiklabs-gcp-02-333ffbd945c1"
+  type    = string
 }
 
 variable "vpc_name" {
-  type        = string
-  default     = "tf-vpc-941127"
+  type    = string
 }
 
 variable "bucket_name" {
-  type        = string
-  default     = "tf-bucket-841837"
+  type    = string
 }
