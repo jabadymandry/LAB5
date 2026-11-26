@@ -14,18 +14,18 @@ resource "google_compute_instance" "default" {
   }
 
   // Local SSD disk
-#   scratch_disk {
-#     interface = "NVME"
-#   }
+  #   scratch_disk {
+  #     interface = "NVME"
+  #   }
 
   network_interface {
-    network = var.network_name
+    network    = var.network_name
     subnetwork = var.subnetwork
     access_config {
       // Ephemeral public IP
     }
   }
 
-  metadata_startup_script = var.metadata_startup_script
-	allow_stopping_for_update = var.allow_stopping_for_update
+  metadata_startup_script   = var.metadata_startup_script
+  allow_stopping_for_update = var.allow_stopping_for_update
 }
